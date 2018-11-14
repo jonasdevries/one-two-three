@@ -1,9 +1,13 @@
 package be.jslm.onetwothree.domain;
 
+import javax.persistence.*;
 import java.time.*;
 
+@Entity
 public class Persoon {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String voornaam;
     private String naam;
@@ -39,11 +43,12 @@ public class Persoon {
 
     public void setGeboorteDatum(LocalDate geboorteDatum) {
         this.geboorteDatum = geboorteDatum;
+
     }
 
     @Override
     public String toString() {
-        return String.format("Persoon[id=%s, voornaam=%s, naam=%s, geboorteDatum=%s]",id, voornaam, naam, geboorteDatum);
+        return String.format("Persoon[id=%d, voornaam=%s, naam=%s, geboorteDatum=%s]",id, voornaam, naam, geboorteDatum);
     }
 
 }

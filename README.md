@@ -12,7 +12,7 @@ projectje met allerlei unit tests, integratie tests, REST assured tests, ...
 - [ ] Technische fiche aanmaken
 - [ ] Verwijder deze checklist
 
-## Links
+## Links‼♦
 https://docs.spring.io/spring-boot/docs/current/reference/html/index.html
 http://joel-costigliola.github.io/assertj/assertj-core-quick-start.html
 
